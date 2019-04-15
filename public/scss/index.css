@@ -1,0 +1,324 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+ins,
+a {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: inline-block;
+}
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.wrapper .header {
+  width: 100%;
+  height: 1.2rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.26667rem;
+}
+
+.wrapper .header i {
+  color: #B82919;
+  font-size: 0.58667rem;
+}
+
+.wrapper .header span {
+  color: #B82919;
+  font-size: 0.48rem;
+}
+
+.wrapper .main {
+  flex: 1;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.wrapper .main .nav {
+  width: 100%;
+  height: 1.06667rem;
+  background: #D04034;
+}
+
+.wrapper .main .nav ul {
+  width: 100%;
+  height: 1.06667rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.wrapper .main .nav li {
+  flex: 1;
+  text-align: center;
+}
+
+.wrapper .main .banner {
+  width: 100%;
+  height: 4.8rem;
+}
+
+.wrapper .main .banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .main .box1 {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.wrapper .main .box1 .box .list1 {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .main .box1 .box .list1 ol {
+  width: 100%;
+  height: 3.04rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+.wrapper .main .box1 .box .list1 ol dt {
+  width: 25.7%;
+  height: 3.04rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.wrapper .main .box1 .box .list1 ol dt img {
+  width: 2.21333rem;
+}
+
+.wrapper .main .box1 .box .list1 ol dd {
+  width: 74.3%;
+  height: 3.04rem;
+}
+
+.wrapper .main .box1 .box .list1 ol dd ul {
+  margin-left: 0.4rem;
+  margin-top: 0.53333rem;
+}
+
+.wrapper .main .box1 .box .list1 ol dd ul li {
+  font-size: 0.42667rem;
+  margin-top: 0.08rem;
+}
+
+.wrapper .main .box1 .box .list1 ol dd ul li em {
+  width: 1.2rem;
+  height: 0.56rem;
+  background: #999999;
+  color: #fff;
+}

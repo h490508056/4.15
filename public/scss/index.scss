@@ -1,0 +1,96 @@
+@import "_minix.scss";
+@import "common.scss";
+.wrapper {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+    .header {
+        width: 100%;
+        height: pxTorem(45px);
+        @include box_flex;
+        @include align;
+        @include justify(space-between);
+        @include sizing;
+        padding: pxTorem(10px);
+        i {
+            color: #B82919;
+            font-size: pxTorem(22px);
+        }
+        span {
+            color: #B82919;
+            font-size: pxTorem(18px);
+        }
+    }
+    .main {
+        flex: 1;
+        @include box_flex;
+        @include direction(column);
+        .nav {
+            width: 100%;
+            height: pxTorem(40px);
+            background: #D04034;
+            ul {
+                width: 100%;
+                height: pxTorem(40px);
+                @include box_flex;
+                @include align;
+            }
+            li {
+                flex: 1;
+                text-align: center;
+            }
+        }
+        .banner {
+            width: 100%;
+            height: pxTorem(180px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .box1 {
+            flex: 1;
+            overflow-y: scroll;
+            .box {
+                .list1 {
+                    width: 100%;
+                    height: auto;
+                    ol {
+                        width: 100%;
+                        height: pxTorem(114px);
+                        @include box_flex;
+                        dt {
+                            width: 25.7%;
+                            height: pxTorem(114px);
+                            @include box_flex;
+                            @include align;
+                            @include justify;
+                            img {
+                                width: pxTorem(83px);
+                            }
+                        }
+                        dd {
+                            width: 74.3%;
+                            height: pxTorem(114px);
+                            ul {
+                                margin-left: pxTorem(15px);
+                                margin-top: pxTorem(20px);
+                                li {
+                                    font-size: pxTorem(16px);
+                                    margin-top: pxTorem(3px);
+                                    em {
+                                        width: pxTorem(45px);
+                                        height: pxTorem(21px);
+                                        background: #999999;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
